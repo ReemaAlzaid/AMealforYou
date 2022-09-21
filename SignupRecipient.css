@@ -1,0 +1,208 @@
+:root {
+    font-size: 100%;
+    font-size: 13.5px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.copy h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.copy h2 {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #DB8E4D;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.legal {
+    font-size: 80%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.signup_split {
+    display: flex;
+    flex-direction: column;
+}
+
+.LeftSide {
+    height: 200px;
+}
+
+.LeftSide,
+.RightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftSide {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/r.jpg');
+    background-size: cover;
+}
+
+.LeftSide,
+.copy {
+    color: whitesmoke;
+    text-align: center;
+    -webkit-font-smoothing: antialiassd;
+    -moz-osx-smoothing: grayscale;
+}
+
+.LeftSide p {
+    font-weight: 400;
+}
+
+.RightSide .copy {
+    color: black;
+    text-align: center;
+}
+
+.RightSide .copy p {
+    margin: 1.5em 0;
+    font-size: 1rem;
+}
+
+.RightSide form {
+    width: 328px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="tel"] {
+    background-color: #FCF9F0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #FCF9F0;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #DB8E4D;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.90rem;
+}
+
+.input-container-password {
+    position: relative;
+}
+
+.input-container-password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.signup {
+    display: block;
+    width: 100%;
+    background: #DB8E4D;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup:hover {
+    background: #f5872d;
+    cursor: pointer;
+}
+
+@media screen and (min-width:900px) {
+    .signup_split {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .LeftSide,
+    .RightSide {
+        display: flex;
+        width: 58%;
+        height: auto;
+    }
+}
+
+#message {
+    font-size: 11px;
+    display: none;
+    background: #FCF9F0;
+    color: #554939;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 11px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+#checkname,
+#checkphone,
+#checkpassword,
+#checkname1,
+#checkphone1,
+#checkpassword1{
+    font-size: 12px;
+    display: none;
+    background: #FCF9F0;
+    color: rgb(212, 21, 21);
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Login a {
+    color: #DB8E4D;
+}
+
+.Login a:hover {
+    color: #f07715;
+}
+
+.RightSide {
+    overflow-y: auto;
+}

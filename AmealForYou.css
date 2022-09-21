@@ -1,0 +1,397 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #FCF9F0;
+    color: #554939;
+}
+
+
+/*--------------------------- Header & Foter---------------------------*/
+
+header img,
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img {
+    padding: 40px;
+}
+
+footer {
+    font-size: small;
+    background-color: #554939;
+    color: #E6C8A0;
+    text-align: center;
+}
+
+
+/*--------------------------- Breadcrumbs ---------------------------*/
+
+.breadcrumb {
+    text-align: left;
+    background-color: #DB8E4D;
+    font-size: 13px;
+    padding: 10px 10px;
+}
+
+.breadcrumb span {
+    color: #E6C8A0;
+}
+
+.breadcrumb a {
+    color: #554939;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------------------------- HomePage ---------------------------*/
+
+.flex-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.flex-child {
+    flex: 1;
+    background: #E6C8A0;
+    padding: 40px;
+    text-align: center;
+}
+
+.flex-child:hover {
+    flex-grow: 3;
+    transition: 2s;
+    box-shadow: inset 0 0 0 100vmax #807363;
+}
+
+.flex-child a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-child h3 a {
+    color: #D42B0E;
+}
+
+.intro-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 150%;
+    text-shadow: 5px 5px 4px black;
+}
+
+.intro-container img {
+    width: 100%;
+    height: auto;
+}
+
+.intro-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+
+/*--------------------------- ResturentHomePage & RecipentHomePage ----------- #DB8E4D;----------------*/
+
+.signout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 90px;
+    padding: 0.8rem;
+    margin-top: 3em;
+    margin-right: 2em;
+    background: #e62e00;
+    color: white;
+    display: block;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 15px;
+    font-size: 14px;
+}
+
+.signout:hover {
+    background: #cc7272;
+    cursor: pointer;
+}
+
+.container1 {
+    position: relative;
+    padding: 10px;
+}
+
+.container1 img {
+    width: 100%;
+}
+
+.J1 {
+    font: oblique bold normal 1.5em Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.J2 {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.J3 {
+    font: normal bold normal 1.5em Verdana, sans-serif;
+    text-align: center;
+}
+
+
+/*table*/
+
+.fl-table {
+    background-color: white;
+    font-size: 14px;
+    font-weight: normal;
+    height: 100%;
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.fl-table a:hover {
+    color: #f35810ee;
+}
+
+.fl-table a {
+    color: #554939;
+}
+
+.fl-table tr:nth-child(even) {
+    background-color: #fbf1ea;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #DB8E4D;
+}
+
+.fl-table tbody th {
+    color: #ffffff;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 14px;
+}
+
+
+/*--------------------------------Add Meal-----------------------------------------*/
+
+.S2 {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.S3 {
+    font: oblique normal normal 1.5em Verdana, sans-serif;
+    text-align: center;
+}
+
+.addMeal-box {
+    position: relative;
+    left: 50%;
+    width: 400px;
+    margin-top: 300PX;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background: #f8f8f8;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(44, 37, 37, 0.6);
+    border-radius: 10px;
+}
+
+.addMeal-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #554939;
+    text-align: center;
+}
+
+.addMeal-box .user-box {
+    position: relative;
+}
+
+.item1 {
+    display: inline-block;
+    margin: 20px 300px;
+}
+
+.item2 {
+    display: inline-block;
+    float: right;
+    margin: 20px 300px;
+}
+
+.addMeal-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #554939;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #554939;
+    outline: none;
+    background: transparent;
+}
+
+.addMeal-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #554939;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.addMeal-box .user-box input:focus~label,
+.addMeal-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #554939;
+    font-size: 12px;
+}
+
+.addMeal-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0px;
+    color: #554939;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    width: 100%;
+}
+
+
+/*--------------------------------HOVER BUTTON-----------------------------------------*/
+
+.addMeal-box a:hover {
+    background: #DB8E4D;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #554939, 0 0 100px #554939;
+}
+
+.addMeal-box a span {
+    position: absolute;
+    display: block;
+}
+
+.addMeal-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+
+/*--------------------------------BORDER ANIMATION-----------------------------------------*/
+
+.addMeal-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.addMeal-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.addMeal-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
